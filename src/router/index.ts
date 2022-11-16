@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue';
 import HomePage from '../views/HomePage.vue';
-import ListKolamPage from '../views/ListKolamPage.vue';
+import PondsPage from '../views/PondsPage.vue';
+import PondRegistrationPage from '../views/PondRegistrationPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,11 +24,16 @@ const routes: Array<RouteRecordRaw> = [
         component: HomePage
       },
       {
-        path: 'listkolam',
-        name: 'ListKolam',
-        component: ListKolamPage
+        path: 'ponds',
+        name: 'PondsPage',
+        component: PondsPage
       }
     ]
+  },
+  {
+    path: '/pondregistration',
+    name: 'PondRegistration',
+    component: PondRegistrationPage
   }
 ]
 
